@@ -13,6 +13,19 @@ function paintMixer(color1, color2) {
   */
   // PLACE YOUR CODE BELOW
 
+  const args = [].slice.call(arguments);
+  
+  if (args.includes('blue') && args.includes('red')) {
+    return 'purple';
+  } else if (args.includes('red') && args.includes('green')) {
+    return 'brown';
+  } else if (args.includes('red') && args.includes('yellow')) {
+    return 'orange';
+  } else if (args.includes('blue') && args.includes('yellow')) {
+    return 'green';
+  } else {
+    return 'unknown';
+  }
   // PLACE YOUR CODE ABOVE
 }
 
